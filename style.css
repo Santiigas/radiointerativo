@@ -47,7 +47,8 @@ body{
     width: 310px;
     height: 150px;
     border-radius: 20px;
-    background-color: var(--corlateral);
+    background-color: #854848;
+    transition: 10ms;
 }
 
 .interno{
@@ -282,11 +283,60 @@ h1{
 
 .configuracoes{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
+}
+
+.configuracoes > h1 {
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .botaoPlay{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 100px;
+    height: 32px;
+    background-color: var(--corlateral);
+    cursor: pointer;
+}
+
+.botaoPlay > h1{
+    font-weight: 600;
+    color: var(--corfundo);
+}
+
+.cores{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cor{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #f8f3ee;
+    cursor: pointer;
+}
+
+#cor1{
+    background-color: #186fd3;
+}
+
+#cor2{
+    background-color:#237c45
+}
+
+#cor3{
+    background-color:#854848
 }
