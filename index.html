@@ -66,38 +66,19 @@
             </div>
         </div>
         <div class="configuracoes">
-            <div class="botaoPlay"> 
+            <audio src="musicas/jojo.mp3"></audio>
+            <button class="botaoPlay"> 
                 <h1>PLAY</h1>
-            </div>
+            </button>
+            <div id="titulo"></div>
             <h1>Experimente mudar as cores:</h1>
             <div class="cores">
                 <div class="cor" id="cor1" onClick="mudarcor1()"></div>
                 <div class="cor" id="cor2" onClick="mudarcor2()"></div>
                 <div class="cor" id="cor3" onClick="mudarcor3()"></div>
             </div>
-            <script>
-
-            const novacor = document.querySelector(".radio");
-            const corbotao = document.querySelector(".botaoPlay")
-
-                
-            function mudarcor1(){
-                novacor.style.background = '#186fd3'
-                corbotao.style.background = '#186fd3'
-            }
-
-            function mudarcor2(){
-                novacor.style.background = '#237c45'
-                corbotao.style.background = '#237c45'
-            }
-            
-            function mudarcor3(){
-                novacor.style.background = '#854848'
-                corbotao.style.background = '#854848'
-            }
-
-            </script>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

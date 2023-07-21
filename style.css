@@ -322,8 +322,8 @@ h1{
 }
 
 .cor{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 40px;
     background-color: #f8f3ee;
     cursor: pointer;
@@ -339,4 +339,15 @@ h1{
 
 #cor3{
     background-color:#854848
+}
+
+#titulo{
+    padding-top: 40px;
+    height: 20px;
+}
+
+p{
+    font-family:'Montserrat', sem serifa;
+    color: #202020;
+    font-size: 15px;
 }
