@@ -78,6 +78,26 @@ body{
     height: 110px;
     border-radius: 5px;
     background-color: var(--saidadesom);
+    transition: 80ms;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      background-color: #4b4b4b;
+    }
+  
+    to {
+      background-color:#313131;
+    }
+  }
+
+  
+.saidasom:hover{
+    transform: translateY(-3px)
 }
 
 .volume{
@@ -102,7 +122,11 @@ body{
     width:20px;
     height: 9px;
     border-radius: 10px;
-    background-color: #686767
+    background-color: #686767;
+}
+
+.mixer2:hover{
+    background-color: #555454;
 }
 
 .botoes{
@@ -286,11 +310,11 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 40px;
+    gap: 10px;
 }
 
 .configuracoes > h1 {
-    padding-top: 40px;
     font-weight: 300;
     font-size: 20px;
 }
@@ -305,6 +329,11 @@ h1{
     height: 32px;
     background-color: var(--corlateral);
     cursor: pointer;
+    transition: 100ms;
+}
+
+.botaoPlay:hover{
+    width: 130px;
 }
 
 .botaoPlay > h1{
@@ -313,7 +342,7 @@ h1{
 }
 
 .cores{
-    padding-top: 10px;
+    padding-top: 1px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -342,12 +371,12 @@ h1{
 }
 
 #titulo{
-    padding-top: 40px;
     height: 20px;
 }
 
 p{
     font-family:'Montserrat', sem serifa;
     color: #202020;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
 }

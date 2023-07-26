@@ -20,20 +20,4 @@ const button = document.querySelector('button')
 button.addEventListener('click', function(){
     const audio = document.querySelector('audio')
     audio.play()
-    mensagem()
 })
-
-function CriaParagrafos () {
-    const p = document.createElement('p');
-    return p;
-}
-
-function mensagem () {
-    const titulo = document.querySelector('#titulo');
-    titulo.innerHTML = '';
-
-    const p = CriaParagrafos()
-
-    p.innerHTML = 'Tocando: Radio Morioh'
-    titulo.appendChild(p);
-}
